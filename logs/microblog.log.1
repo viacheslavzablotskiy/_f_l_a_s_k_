@@ -1,0 +1,116 @@
+
+2023-05-21 23:18:07,390 INFO: Microblog startup [in D:\flask_flask\flask_flask_1\flask_flask_2\app\__init__.py:75]
+2023-05-21 23:18:28,229 INFO: Microblog startup [in D:\flask_flask\flask_flask_1\flask_flask_2\app\__init__.py:75]
+2023-05-21 23:18:44,329 ERROR: Exception on / [GET] [in D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 285, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\login_manager.py", line 196, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\werkzeug\routing\map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'main.user' instead?
+2023-05-21 23:22:09,235 ERROR: Exception on / [GET] [in D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 285, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\login_manager.py", line 196, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\werkzeug\routing\map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'main.user' instead?
+2023-05-21 23:23:16,998 ERROR: Exception on / [GET] [in D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 285, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\login_manager.py", line 196, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\werkzeug\routing\map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'main.user' instead?
+2023-05-21 23:25:42,718 ERROR: Exception on / [GET] [in D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 285, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\login_manager.py", line 196, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\flask\app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "D:\flask_flask\flask_flask_1\flask_flask_2\venv\lib\site-packages\werkzeug\routing\map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'main.user' instead?
+2023-05-21 23:27:16,561 INFO: Microblog startup [in D:\flask_flask\flask_flask_1\flask_flask_2\app\__init__.py:75]
+2023-05-21 23:28:20,786 INFO: Microblog startup [in D:\flask_flask\flask_flask_1\flask_flask_2\app\__init__.py:75]
+2023-05-21 23:37:43,698 INFO: Microblog startup [in D:\flask_flask\flask_flask_1\flask_flask_2\app\__init__.py:75]
+2023-05-21 23:38:29,780 INFO: Microblog startup [in D:\flask_flask\flask_flask_1\flask_flask_2\app\__init__.py:75]
+2023-05-21 23:38:56,206 INFO: Microblog startup [in D:\flask_flask\flask_flask_1\flask_flask_2\app\__init__.py:75]

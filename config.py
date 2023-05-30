@@ -12,7 +12,7 @@ class Config(object):
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = 'zlava.mag@gmail.com'
-    MAIL_PASSWORD = 'luxnnotgldoytmqf'
+    MAIL_PASSWORD = ''
     ADMINS = ['zlaval@gmail.com']
     POSTS_PER_PAGE = 2
     LANGUAGES = ['en', 'es']
